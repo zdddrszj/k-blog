@@ -1,0 +1,36 @@
+@import '../../styles/mix.scss';
+.list {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $borderE8Color;
+  .list-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: font45Color;
+    a:hover {
+      color: font45Color;
+    }
+  }
+  .list-intro {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    word-break: break-all;
+  }
+  .list-desc {
+    .list-desc__span {
+      margin-right: 10px;
+      display: inline-block;
+    }
+    .list-desc__link {
+      margin-left: 5px;
+    }
+  }
+  .list-btn {
+    margin-left: 20px; 
+    .ant-btn {
+      font-size: 12px;
+      margin: 20px 20px 0 0;
+    }
+  }
+}

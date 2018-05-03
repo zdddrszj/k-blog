@@ -1,0 +1,36 @@
+@import '../../styles/mix.scss';
+
+.sidebar {
+  .sidebar-title {
+    margin-bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    .anticon {
+      margin-right: 10px;
+    }
+  }
+  .sidebar-items {
+    .ant-tag {
+      margin: 8px;
+      a, a:visited {
+        text-decoration: none;
+      }
+    }
+  }
+  .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+    border-right: 0 none;
+  }
+  .tag-items {
+    margin-bottom: 15px;
+  }
+}
+.sdmask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: rgba(0,0,0,.5);
+  transition: display .2s;
+}

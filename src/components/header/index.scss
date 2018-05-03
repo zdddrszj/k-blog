@@ -1,0 +1,50 @@
+@import '../../styles/mix.scss';
+.header {
+  padding: 0 20px;
+  height: 64px;
+  align-items: center;
+  display: flex;
+  .header-l {
+    .header-l__menu {
+      display: none;
+      background-color: $borderGeneralColor;
+      margin-left: 20px;
+      border-radius: 4px;
+      padding: 0px 8px;
+      cursor: pointer;
+      .iconfont  {
+        font-size: 22px;
+      }
+    }
+    .header-l__logo {
+      font-size: 24px;
+      color: $fontBlueColor;
+      text-decoration: none;
+    }
+  }
+  .header-r {
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    .header-r__login, .header-r__logout {
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    .header-r__write {
+      font-size: 16px;
+      color: $fontBlueColor;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    .header-r__avatar {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .header {
+    padding: 0 10px;
+  }
+}

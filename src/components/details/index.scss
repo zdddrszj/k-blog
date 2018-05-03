@@ -1,0 +1,30 @@
+@import '../../styles/mix.scss';
+@import '../../../node_modules/highlight.js/styles/github.css';
+
+.details {
+  text-align: justify;
+  .details-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: $font45Color;
+    text-align: center;
+  }
+  .details-intro {
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .details-desc {
+    &:nth-of-type(1) {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .details-desc__span {
+      margin-right: 10px;
+      display: inline-block;
+    }
+    .details-desc__link {
+      margin-left: 10px;
+    }
+  }
+}
