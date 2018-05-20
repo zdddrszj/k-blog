@@ -1,5 +1,7 @@
 # k-blog
 
+绑定域名 www.wintersnow.vip
+
 本项目采用 react16.2 + redux3.7 + webpack3.8 的形式进行开发，前端进行路由，按照如下命令启动开发
 
 ##  1、安装依赖
