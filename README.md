@@ -1,7 +1,5 @@
 # k-blog
 
-# 框架
-
 本项目采用 react16.2 + redux3.7 + webpack3.8 的形式进行开发，前端进行路由，按照如下命令启动开发
 
 ##  1、安装依赖
@@ -20,7 +18,11 @@ yarn
 
 sudo mongod --dbpath=/data/db
 
-// 利用mongo命令行创建用户角色
+// 导入数据库
+
+mongorestore -d kblog E:\project\k-blog\db\kblog
+
+// 利用mongo命令行创建用户
 
 use kblog
 
@@ -41,6 +43,8 @@ sudo mongod --dbpath=/data/db --auth
 // 登录认证
 
 db.auth("kblogdb","kblogdb")
+
+
 
 ```
 
