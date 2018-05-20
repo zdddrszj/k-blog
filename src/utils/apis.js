@@ -1,6 +1,6 @@
 import 'whatwg-fetch'
 
-let urlPrefix = `${window.location.protocol}//${window.location.hostname}:1234/api/v1`
+let urlPrefix = `${window.location.protocol}//${window.location.hostname}:11234/api/v1`
 let apis = {
   register: urlPrefix + '/register',
   login: urlPrefix + '/login',

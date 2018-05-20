@@ -7,7 +7,7 @@
 ```
 // 开发之前需要安装依赖：
 
-yarn
+npm install
 
 （如果node-sass无法安装，请尝试：SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install node-sass）
 ```
@@ -62,9 +62,9 @@ redis-server /usr/local/redis/redis.conf
 
 ## 4、启动后端服务
 ```
-// 会在本地启动一个监听 1234 端口的 node 服务器，固接口链接为http://本机ip:1234/
+// 会在本地启动一个监听 11234 端口的 node 服务器，固接口链接为http://本机ip:11234/
 
-yarn server
+npm run server
 
 ```
 
@@ -72,7 +72,7 @@ yarn server
 ```
 // 会在本地启动一个监听 3002 端口的 node 服务器，本地预览，请访问 http://本机ip:3002/
 
-yarn start
+npm run start
 
 ```
 
@@ -80,7 +80,7 @@ yarn start
 ```
 // 在 build 文件夹下生成打包好的文件
 
-yarn build
+npm run build
 
 ```
 

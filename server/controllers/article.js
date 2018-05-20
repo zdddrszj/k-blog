@@ -238,9 +238,9 @@ exports.uploadPicture = async (ctx) => {
       return
     }
     let dir = `${path.sep}uploads${path.sep}images`
-    let fileName = `${files.name.split('.')[0]}_${(+new Date())}${path.extname(files.name)}`
+    let fileName = `${(+new Date())}${path.extname(files.name)}`
     let targetDir = path.join(__dirname, '..', dir)
-    fileUpload(files, targetDir, fileName)
+    await fileUpload(files, targetDir, fileName)
     ctx.body = {
       code: 10000,
       success: true,

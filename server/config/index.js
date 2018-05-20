@@ -22,7 +22,6 @@ const redisConfig = {
 let date = new Date()
 let time = date.setDate(date.getTime() + 1000)
 const cookieConfig = {
-  domain: host ? host.address : 'localhost', // 写cookie所在的域名
   path: '/',       // 写cookie所在的路径
   maxAge: 12 * 60 * 60 * 1000,   // cookie有效时长
   httpOnly: true,  // 是否只用于http请求中获取

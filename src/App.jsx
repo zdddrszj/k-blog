@@ -25,10 +25,10 @@ const Audit = asyncComponent(() => import('./containers/admin/audit'))
 const Login = asyncComponent(() => import('./containers/login'))
 const DevTool = asyncComponent(() => import('./containers/devTools'))
 
-let devTool = ''
-if (process.env.NODE_ENV === 'development') {
-  devTool = <DevTool/>
-}
+// let devTool = ''
+// if (process.env.NODE_ENV === 'development') {
+//   devTool = <DevTool/>
+// }
 class App extends Component {
   render() {
     return (
