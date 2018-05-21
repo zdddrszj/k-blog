@@ -111,7 +111,7 @@ function delCookie(name, path = '/') {
  * 是否是移动端
  */
 function isMobile () {
-  return window.innerWidth >= 768 ? false : true
+  return window.innerWidth > 768 ? false : true
 }
 
 /**
