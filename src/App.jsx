@@ -23,7 +23,7 @@ const Delete = asyncComponent(() => import('./containers/admin/delete'))
 const TagMan = asyncComponent(() => import('./containers/admin/tagMan'))
 const Audit = asyncComponent(() => import('./containers/admin/audit'))
 const Login = asyncComponent(() => import('./containers/login'))
-const DevTool = asyncComponent(() => import('./containers/devTools'))
+// const DevTool = asyncComponent(() => import('./containers/devTools'))
 
 // let devTool = ''
 // if (process.env.NODE_ENV === 'development') {
