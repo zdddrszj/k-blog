@@ -34,7 +34,7 @@ exports.register = async (ctx, next) => {
       ctx.body = {
         code: 10000,
         success: true,
-        data: ret
+        data: {_id: ret._id, name: ret.name}
       }
     } else {
       ctx.body = {
@@ -60,7 +60,7 @@ exports.login = async (ctx, next) => {
     ctx.body = {
       code: 10000,
       success: true,
-      data: ret
+      data: {_id: ret._id, name: ret.name}
     }
   } else {
     ctx.body = {
@@ -82,7 +82,7 @@ exports.getUser = async (ctx) => {
       ctx.body = {
         code: 10000,
         success: true,
-        data: ret
+        data: {_id: ret._id, name: ret.name}
       }
     } else {
       ctx.body = {
@@ -109,7 +109,7 @@ exports.isLogin = async (ctx) => {
     ctx.body = {
       code: 10000,
       success: true,
-      data: ret
+      data: {_id: ret._id, name: ret.name}
     }
   } else {
     ctx.body = {
